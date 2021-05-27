@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name digikiy_lib)(type Legacy)(uri B:/digikey-kicad-library-master/digikey-symbols/dk_Slide-Switches.lib)(options "")(descr ""))
+)

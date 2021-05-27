@@ -1,0 +1,606 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "arduino clone"
+Date "2021-04-20"
+Rev "v1"
+Comp "student version"
+Comment1 "kushalmishra"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP C3
+U 1 1 607EAE03
+P 9960 2510
+F 0 "C3" H 10078 2556 50  0000 L CNN
+F 1 "10uf" H 10078 2465 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9998 2360 50  0001 C CNN
+F 3 "~" H 9960 2510 50  0001 C CNN
+	1    9960 2510
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 607EB64B
+P 6360 1960
+F 0 "C1" H 6475 2006 50  0000 L CNN
+F 1 "22pF" H 6475 1915 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6398 1810 50  0001 C CNN
+F 3 "~" H 6360 1960 50  0001 C CNN
+	1    6360 1960
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 607EBD02
+P 6360 2430
+F 0 "C2" H 6475 2476 50  0000 L CNN
+F 1 "22pF" H 6475 2385 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6398 2280 50  0001 C CNN
+F 3 "~" H 6360 2430 50  0001 C CNN
+	1    6360 2430
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 607EC179
+P 7240 3150
+F 0 "D1" H 7233 3367 50  0000 C CNN
+F 1 "LED" H 7233 3276 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7240 3150 50  0001 C CNN
+F 3 "~" H 7240 3150 50  0001 C CNN
+	1    7240 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 607EDBFD
+P 10470 2500
+F 0 "BT1" H 10578 2546 50  0000 L CNN
+F 1 "Battery 3v" H 10578 2455 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 10470 2560 50  0001 C CNN
+F 3 "~" V 10470 2560 50  0001 C CNN
+	1    10470 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L newlb:DS1337 U1
+U 1 1 607F875A
+P 2730 1810
+F 0 "U1" H 2490 2510 50  0000 C CNN
+F 1 "DS13375+" H 3020 2480 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2230 2460 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1337-DS1337C.pdf" H 2230 2460 50  0001 C CNN
+	1    2730 1810
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 607F9ABA
+P 1180 1580
+F 0 "Y1" H 1180 1848 50  0000 C CNN
+F 1 "Crystal 32MHZ" H 1180 1757 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm" H 1180 1580 50  0001 C CNN
+F 3 "~" H 1180 1580 50  0001 C CNN
+	1    1180 1580
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Crystal Y2
+U 1 1 607F9F36
+P 6820 2210
+F 0 "Y2" H 6820 2478 50  0000 C CNN
+F 1 "Crystal 16MHZ" H 6820 2387 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering" H 6820 2210 50  0001 C CNN
+F 3 "~" H 6820 2210 50  0001 C CNN
+	1    6820 2210
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 607F0CE3
+P 6680 3500
+F 0 "R1" H 6750 3546 50  0000 L CNN
+F 1 "330ohm" H 6750 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6610 3500 50  0001 C CNN
+F 3 "~" H 6680 3500 50  0001 C CNN
+	1    6680 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 607F11C6
+P 7390 4040
+F 0 "R2" H 7460 4086 50  0000 L CNN
+F 1 "10kohm" H 7460 3995 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7320 4040 50  0001 C CNN
+F 3 "~" H 7390 4040 50  0001 C CNN
+	1    7390 4040
+	1    0    0    -1  
+$EndComp
+Text Label 4880 7340 0    50   ~ 0
+MISO
+Text Label 7970 3050 2    50   ~ 0
+MISO
+Text Label 4880 6740 0    50   ~ 0
+SCK
+Text Label 4880 7030 0    50   ~ 0
+VCC
+Text Label 4880 6430 0    50   ~ 0
+RESET
+Text Label 4880 6140 0    50   ~ 0
+MOSI
+Text Label 5030 5830 0    50   ~ 0
+GND
+Text Label 7970 2950 2    50   ~ 0
+MOSI
+Wire Wire Line
+	8470 4750 8470 4870
+Text Label 8900 1420 0    50   ~ 0
+VCC
+Text Label 8520 4980 2    50   ~ 0
+GND
+Text Label 7970 3150 2    50   ~ 0
+SCK
+Text Label 7970 3850 2    50   ~ 0
+RESET
+$Comp
+L power:GNDPWR #PWR0101
+U 1 1 60806CCA
+P 5030 5770
+F 0 "#PWR0101" H 5030 5570 50  0001 C CNN
+F 1 "GNDPWR" H 5034 5616 50  0000 C CNN
+F 2 "" H 5030 5720 50  0001 C CNN
+F 3 "" H 5030 5720 50  0001 C CNN
+	1    5030 5770
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4880 5830 5030 5830
+Wire Wire Line
+	5030 5830 5030 5770
+$Sheet
+S 1800 5170 3080 2400
+U 607EAB80
+F0 "sheet1" 50
+F1 "connecters.sch" 50
+F2 "MISO" O R 4880 7340 50 
+F3 "VCC" I R 4880 7030 50 
+F4 "SCK" B R 4880 6740 50 
+F5 "RESET" O R 4880 6430 50 
+F6 "MOSI" I R 4880 6140 50 
+F7 "GND" I R 4880 5830 50 
+F8 "RX" I L 1800 7230 50 
+F9 "TX" O L 1800 7030 50 
+F10 "SDA" I L 1800 6730 50 
+F11 "D2" B L 1800 6430 50 
+F12 "D3" B L 1800 6230 50 
+F13 "D4" B L 1800 6070 50 
+F14 "D5" B L 1800 5880 50 
+F15 "D6" B L 1800 5730 50 
+F16 "D7" B L 1800 5530 50 
+F17 "D8" B L 1800 5330 50 
+$EndSheet
+Text Label 1730 7230 2    50   ~ 0
+RX
+Text Label 1720 7030 2    50   ~ 0
+TX
+Text Label 1700 6730 2    50   ~ 0
+SDA
+Text Label 1700 6430 2    50   ~ 0
+D2
+Text Label 1690 6230 2    50   ~ 0
+D3
+Text Label 1680 6070 2    50   ~ 0
+D4
+Text Label 1680 5880 2    50   ~ 0
+D5
+Text Label 1680 5730 2    50   ~ 0
+D6
+Text Label 1680 5530 2    50   ~ 0
+D7
+Text Label 1660 5330 2    50   ~ 0
+D8
+Wire Wire Line
+	1800 5330 1660 5330
+Wire Wire Line
+	1680 5530 1800 5530
+Wire Wire Line
+	1800 5730 1680 5730
+Wire Wire Line
+	1680 5880 1800 5880
+Wire Wire Line
+	1800 6070 1680 6070
+Wire Wire Line
+	1800 6230 1690 6230
+Wire Wire Line
+	1700 6430 1800 6430
+Wire Wire Line
+	1800 6730 1700 6730
+Wire Wire Line
+	1800 7030 1720 7030
+Wire Wire Line
+	1800 7230 1730 7230
+Text Label 7970 1950 2    50   ~ 0
+D3
+Text Label 7970 2650 2    50   ~ 0
+D8
+Text Label 7970 2550 2    50   ~ 0
+D7
+Text Label 7970 2450 2    50   ~ 0
+D6
+Text Label 7970 2350 2    50   ~ 0
+D5
+Text Label 7970 2050 2    50   ~ 0
+D4
+Text Label 1700 6430 2    50   ~ 0
+D2
+Text Label 7970 4150 2    50   ~ 0
+D2
+Text Label 7970 3650 2    50   ~ 0
+SDA
+Text Label 7970 3950 2    50   ~ 0
+RX
+Text Label 7970 4050 2    50   ~ 0
+TX
+Wire Wire Line
+	1180 1310 1180 1430
+Wire Wire Line
+	1180 1730 1830 1730
+Wire Wire Line
+	1830 1730 1830 1810
+Wire Wire Line
+	1180 1310 1830 1310
+Wire Wire Line
+	1840 2310 1830 2310
+Wire Wire Line
+	2730 2510 2730 2690
+Wire Wire Line
+	2730 2690 2720 2690
+Text Label 1840 2310 2    50   ~ 0
+VCC
+$Comp
+L power:GNDPWR #PWR0102
+U 1 1 608375B6
+P 2720 2690
+F 0 "#PWR0102" H 2720 2490 50  0001 C CNN
+F 1 "GNDPWR" H 2724 2536 50  0000 C CNN
+F 2 "" H 2720 2640 50  0001 C CNN
+F 3 "" H 2720 2640 50  0001 C CNN
+	1    2720 2690
+	1    0    0    -1  
+$EndComp
+Text Label 3630 2310 0    50   ~ 0
+SDA
+Text Label 3630 1810 0    50   ~ 0
+SCK
+NoConn ~ 3630 1310
+Text Label 2730 990  0    50   ~ 0
+VCC
+Wire Wire Line
+	2730 1110 2730 990 
+Text Label 7970 3250 2    50   ~ 0
+ADDS1
+Text Label 7970 3350 2    50   ~ 0
+ADDS2
+Wire Wire Line
+	10470 2700 10200 2700
+Wire Wire Line
+	9960 2700 9960 2660
+Wire Wire Line
+	10470 2300 10230 2300
+Wire Wire Line
+	9960 2300 9960 2360
+Wire Wire Line
+	10230 1480 10230 2300
+Connection ~ 10230 2300
+Wire Wire Line
+	10230 2300 9960 2300
+$Comp
+L power:GNDPWR #PWR0104
+U 1 1 60854A1F
+P 10200 2700
+F 0 "#PWR0104" H 10200 2500 50  0001 C CNN
+F 1 "GNDPWR" H 10204 2546 50  0000 C CNN
+F 2 "" H 10200 2650 50  0001 C CNN
+F 3 "" H 10200 2650 50  0001 C CNN
+	1    10200 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 10200 2700
+Wire Wire Line
+	10200 2700 9960 2700
+Wire Wire Line
+	7170 2150 7170 1960
+Wire Wire Line
+	7170 1960 6820 1960
+Wire Wire Line
+	6820 1960 6820 2060
+Wire Wire Line
+	6820 2360 6820 2430
+Wire Wire Line
+	6820 2430 7490 2430
+Wire Wire Line
+	7490 2430 7490 2250
+Wire Wire Line
+	7490 2250 7970 2250
+Wire Wire Line
+	7170 2150 7970 2150
+Wire Wire Line
+	6820 2430 6510 2430
+Connection ~ 6820 2430
+Wire Wire Line
+	6820 1960 6510 1960
+Connection ~ 6820 1960
+Wire Wire Line
+	6210 1960 6210 2430
+$Comp
+L power:GNDPWR #PWR0105
+U 1 1 6086D1EF
+P 6210 2730
+F 0 "#PWR0105" H 6210 2530 50  0001 C CNN
+F 1 "GNDPWR" H 6214 2576 50  0000 C CNN
+F 2 "" H 6210 2680 50  0001 C CNN
+F 3 "" H 6210 2680 50  0001 C CNN
+	1    6210 2730
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6210 2730 6210 2430
+Connection ~ 6210 2430
+Wire Wire Line
+	7970 3850 7390 3850
+Wire Wire Line
+	7390 3850 7390 3890
+Wire Wire Line
+	6680 3150 6680 3350
+Wire Wire Line
+	6680 3150 7090 3150
+$Comp
+L power:GNDPWR #PWR0106
+U 1 1 6087CF2B
+P 6680 3650
+F 0 "#PWR0106" H 6680 3450 50  0001 C CNN
+F 1 "GNDPWR" H 6684 3496 50  0000 C CNN
+F 2 "" H 6680 3600 50  0001 C CNN
+F 3 "" H 6680 3600 50  0001 C CNN
+	1    6680 3650
+	1    0    0    -1  
+$EndComp
+Text Label 7400 4370 0    50   ~ 0
+VCC
+Wire Wire Line
+	7390 4190 7390 4250
+Wire Wire Line
+	7390 4370 7400 4370
+Wire Wire Line
+	7970 4350 7640 4350
+Wire Wire Line
+	7640 4350 7640 4250
+Wire Wire Line
+	7640 4250 7390 4250
+Connection ~ 7390 4250
+Wire Wire Line
+	7390 4250 7390 4370
+$Comp
+L power:GNDPWR #PWR0107
+U 1 1 60880DE3
+P 8570 4870
+F 0 "#PWR0107" H 8570 4670 50  0001 C CNN
+F 1 "GNDPWR" H 8574 4716 50  0000 C CNN
+F 2 "" H 8570 4820 50  0001 C CNN
+F 3 "" H 8570 4820 50  0001 C CNN
+	1    8570 4870
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7970 4450
+NoConn ~ 7970 4250
+NoConn ~ 7970 3450
+NoConn ~ 7970 3550
+NoConn ~ 7970 3750
+NoConn ~ 7970 2850
+NoConn ~ 7970 2750
+Wire Wire Line
+	7970 3150 7970 3070
+Wire Wire Line
+	7970 3070 7390 3070
+Wire Wire Line
+	7390 3070 7390 3150
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 607FFEFC
+P 9370 1480
+F 0 "#FLG0101" H 9370 1555 50  0001 C CNN
+F 1 "PWR_FLAG" H 9370 1653 50  0000 C CNN
+F 2 "" H 9370 1480 50  0001 C CNN
+F 3 "~" H 9370 1480 50  0001 C CNN
+	1    9370 1480
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9370 1480 10230 1480
+Wire Wire Line
+	8670 4750 8670 4870
+Wire Wire Line
+	8670 4870 8570 4870
+Connection ~ 8570 4870
+Wire Wire Line
+	8570 4870 8470 4870
+Wire Wire Line
+	8570 4750 8570 4870
+Wire Wire Line
+	8470 1650 8470 1550
+Wire Wire Line
+	8470 1550 8570 1550
+Wire Wire Line
+	8670 1550 8670 1650
+Wire Wire Line
+	8570 1650 8570 1550
+Connection ~ 8570 1550
+Wire Wire Line
+	8570 1550 8670 1550
+Wire Wire Line
+	8570 1550 8570 1450
+Wire Wire Line
+	8570 1450 8900 1450
+Wire Wire Line
+	8900 1450 8900 1420
+Wire Wire Line
+	8900 1450 9210 1450
+Wire Wire Line
+	9210 1450 9210 1480
+Wire Wire Line
+	9210 1480 9370 1480
+Connection ~ 8900 1450
+Connection ~ 9370 1480
+Wire Wire Line
+	2390 4460 2740 4460
+Connection ~ 2390 4460
+Wire Wire Line
+	2390 4180 2390 4460
+Text Label 1590 4180 2    50   ~ 0
+VCC
+Text Label 2960 4200 2    50   ~ 0
+VCC
+Connection ~ 3360 4460
+Wire Wire Line
+	3760 4460 3360 4460
+Wire Wire Line
+	3760 4200 3760 4460
+Text Label 1590 3980 2    50   ~ 0
+ADDS1
+Text Label 1590 4080 2    50   ~ 0
+ADDS2
+Text Label 2960 4000 2    50   ~ 0
+ADDS1
+Text Label 2960 4100 2    50   ~ 0
+ADDS2
+Text Label 3760 4100 0    50   ~ 0
+SCK
+Text Label 3760 4000 0    50   ~ 0
+SDA
+Text Label 2390 3980 0    50   ~ 0
+SDA
+Text Label 2390 4080 0    50   ~ 0
+SCK
+Wire Wire Line
+	2670 3650 1990 3650
+Connection ~ 2670 3650
+Wire Wire Line
+	2670 3570 2670 3650
+Wire Wire Line
+	2740 4460 3360 4460
+Connection ~ 2740 4460
+$Comp
+L power:GNDPWR #PWR0103
+U 1 1 6083D86D
+P 2740 4460
+F 0 "#PWR0103" H 2740 4260 50  0001 C CNN
+F 1 "GNDPWR" H 2744 4306 50  0000 C CNN
+F 2 "" H 2740 4410 50  0001 C CNN
+F 3 "" H 2740 4410 50  0001 C CNN
+	1    2740 4460
+	1    0    0    -1  
+$EndComp
+Text Label 2670 3570 0    50   ~ 0
+VCC
+Wire Wire Line
+	3360 4460 3360 4400
+Wire Wire Line
+	1990 4460 2390 4460
+Wire Wire Line
+	1990 4380 1990 4460
+Wire Wire Line
+	1990 3650 1990 3780
+Wire Wire Line
+	3360 3650 2670 3650
+Wire Wire Line
+	3360 3800 3360 3650
+$Comp
+L Memory_EEPROM:24LC1025 U3
+U 1 1 607F8033
+P 3360 4100
+F 0 "U3" H 3560 4480 50  0000 C CNN
+F 1 "24LC1025" H 3570 4380 50  0000 C CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 3360 4100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 3360 4100 50  0001 C CNN
+	1    3360 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_EEPROM:24LC1025 U2
+U 1 1 607F74DD
+P 1990 4080
+F 0 "U2" H 2240 4410 50  0000 C CNN
+F 1 "24LC1025" H 2230 4350 50  0000 C CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 1990 4080 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 1990 4080 50  0001 C CNN
+	1    1990 4080
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Embedded-Microcontrollers:ATMEGA328P-AU U4
+U 1 1 607F2FF3
+P 8470 3250
+F 0 "U4" H 8798 3353 60  0000 L CNN
+F 1 "ATMEGA328P-AU" H 8798 3247 60  0000 L CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 8670 3450 60  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en608326" H 8670 3550 60  0001 L CNN
+F 4 "ATMEGA328P-AU-ND" H 8670 3650 60  0001 L CNN "Digi-Key_PN"
+F 5 "ATMEGA328P-AU" H 8670 3750 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 8670 3850 60  0001 L CNN "Category"
+F 7 "Embedded - Microcontrollers" H 8670 3950 60  0001 L CNN "Family"
+F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en608326" H 8670 4050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/microchip-technology/ATMEGA328P-AU/ATMEGA328P-AU-ND/1832260" H 8670 4150 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC MCU 8BIT 32KB FLASH 32TQFP" H 8670 4250 60  0001 L CNN "Description"
+F 11 "Microchip Technology" H 8670 4350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8670 4450 60  0001 L CNN "Status"
+	1    8470 3250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	690  600  690  3090
+Wire Notes Line
+	690  3090 4100 3090
+Wire Notes Line
+	4100 3090 4100 600 
+Wire Notes Line
+	690  600  4100 600 
+Wire Notes Line
+	840  3340 4100 3340
+Wire Notes Line
+	4100 3340 4100 4690
+Wire Notes Line
+	4100 4690 840  4690
+Wire Notes Line
+	840  4690 840  3340
+Wire Notes Line
+	5630 970  10980 970 
+Wire Notes Line
+	10980 970  10980 5230
+Wire Notes Line
+	10980 5230 5640 5230
+Text Notes 860  700  0    50   ~ 0
+N1-clock
+Text Notes 900  3460 0    50   ~ 0
+N2-memory-eeprom
+Text Notes 5710 1120 0    50   ~ 0
+N3 - atmega-microcontroller
+Wire Notes Line
+	5640 970  5640 5230
+Wire Notes Line
+	1390 5000 5310 5000
+Wire Notes Line
+	5310 5000 5310 7720
+Wire Notes Line
+	5310 7720 1390 7720
+Wire Notes Line
+	1390 7720 1390 5000
+Text Notes 1420 4950 0    50   ~ 0
+N4 - connector
+$EndSCHEMATC
